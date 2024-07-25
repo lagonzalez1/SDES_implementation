@@ -9,27 +9,22 @@
 
 class KeyGen {
 public:
-	// 
 	int toHash[10] = { 1,0,1,0,0,0,0,0,1,0 };
 	int input[10];
 	void permute();
 	void left_rotate();
 	std::bitset<8> getKey1Bit();
 	std::bitset<8> getKey2Bit();
-
 	KeyGen() {
 		permute();
 	}
 
 private:
+	const int MAX_HASH = 8;
 	const int MAX = 10;
 	const int MID = 5;
-	const int MAX_HASH = 8;
 	const int permuteHash8[8] = { 6,3,7,4,8,5,10,9 };
 	const int permuteHash10[10] = { 3,5,2,7,4,10,1,9,8,6 };
-
-
-
 };
 
 // Shuffle starting point
