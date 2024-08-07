@@ -48,4 +48,4 @@ Decryption: Iterate over the encrypted vector of bits and call the fk_decrypt_wo
 
 
 
-![screenshot](des.png)
+![des](des.PNG)
